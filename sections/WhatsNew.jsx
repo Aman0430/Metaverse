@@ -14,7 +14,7 @@ const WhatsNew = () => (
       initial="hidden"
       whileInView="show"
       viewport={{once: false, amount: 0.25}}
-      className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
+      className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col-reverse gap-8`}
     >
       <motion.div
         variants={fadeIn('right', 'tween', 0.2, 1)}
