@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { motion } from "framer-motion";
 
@@ -13,17 +13,21 @@ const Insights = () => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{once: 'false', amount: 0.25}}
+      viewport={{ once: "false", amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
       <TypingText title="| Insights" textStyles="text-center" />
-      <TitleText 
+      <TitleText
         title={<>Insights about Metaverse</>}
         textStyles="text-center"
       />
       <div className="mt-[50px] flex flex-col gap-[30px]">
         {insights.map((insight, index) => (
-          <InsightCard key={`insight-${index}`} {...insight} index={index+1} />
+          <InsightCard
+            key={`insight-${index}`}
+            {...insight}
+            index={index + 1}
+          />
         ))}
       </div>
     </motion.div>

@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
 import { motion } from "framer-motion";
 
-import styles from '../styles';
+import styles from "../styles";
 import { fadeIn, staggerContainer, zoomIn } from "../utils/motion";
 
 const Feedback = () => (
@@ -11,11 +11,11 @@ const Feedback = () => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{once: 'false', amount: 0.25}}
+      viewport={{ once: "false", amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col lg:flex-row gap-6`}
     >
       <motion.div
-        variants={fadeIn('right', 'tween', 0.2, 1)}
+        variants={fadeIn("right", "tween", 0.2, 1)}
         className="flex-[0.5] flex justify-end flex-col lg:max-w-[370px] gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6a6a6a] relative"
       >
         <div className="feedback-gradient" />
@@ -28,15 +28,17 @@ const Feedback = () => (
           </p>
         </div>
         <p className="mt-[20px] font-normal sm:text-[24px] text-[18px] sm:leading-[45px] leading-[39px] text-white">
-          "With the development of today's wechnology, metaverse if very useful for today's work, or can be called web 3.0 by using metaverse you can use it as anything"
+          "With the development of today's wechnology, metaverse if very useful
+          for today's work, or can be called web 3.0 by using metaverse you can
+          use it as anything"
         </p>
       </motion.div>
 
       <motion.div
-        variants={fadeIn('left', 'tween', 0.2, 1)}
+        variants={fadeIn("left", "tween", 0.2, 1)}
         className="relative flex-1 flex justify-center items-center"
       >
-        <img 
+        <img
           src="/planet-09.png"
           alt="planet-09"
           className="w-full lg:h-[600px] h-auto min-h-[210px] object-cover rounded-[38px]"
@@ -52,7 +54,6 @@ const Feedback = () => (
           />
         </motion.div>
       </motion.div>
-
     </motion.div>
   </section>
 );
